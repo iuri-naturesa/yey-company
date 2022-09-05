@@ -1,0 +1,51 @@
+html {
+  background: var(--cor-b1);
+  scroll-behavior: smooth;
+  color: var(--cor-b2);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.yey-logo {
+  text-decoration: none;
+  font-family: "empera";
+  font-size: 3rem;
+  color: var(--cor-p1);
+  border: solid 5px var(--cor-p1);
+  white-space: nowrap;
+}
+.menu-lista {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.menu-lista a {
+  text-decoration: none;
+  color: var(--cor-b2);
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  font-family: "mont-m", sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+.menu-lista a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-p1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+.menu-lista a:hover:after {
+  width: 100%;
+}
+@media (max-width: 850px) {
+  .yey-logo {
+    font-size: 2.5rem;
+  }
+}

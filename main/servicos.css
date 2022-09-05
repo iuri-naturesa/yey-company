@@ -1,0 +1,18 @@
+.servicos {
+  margin-top: 20vh;
+}
+.servicos h2 {
+  font-family: "raleway-eb";
+  color: var(--cor-b2);
+  font-size: 4rem;
+  padding-top: 40px;
+  user-select: none;
+}
+.servicos h2::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: var(--cor-p1);
+  display: block;
+  /* margin: 0px auto; */
+}

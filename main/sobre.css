@@ -1,0 +1,18 @@
+.sobre {
+  margin-top: 20vh;
+}
+.sobre h2 {
+  font-family: "raleway-eb";
+  color: var(--cor-b2);
+  font-size: 4rem;
+  padding-top: 40px;
+  user-select: none;
+}
+.sobre h2::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: var(--cor-p1);
+  display: block;
+  /* margin: 0px auto; */
+}

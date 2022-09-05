@@ -1,0 +1,70 @@
+.menu-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-lista {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0px;
+    background: var(--cor-p1);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .header-links.ativo .menu-lista {
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .menu-lista a {
+    width: 100%;
+  }
+  .menu-lista li {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.203);
+    text-align: left;
+  }
+  .menu-btn {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-b2);
+    background: none;
+    font-size: 2rem;
+  }
+  .hamburguer {
+    width: 40px;
+    border-top: 3px solid var(--cor-p1);
+  }
+  .hamburguer::after,
+  .hamburguer::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--cor-p1);
+    margin-top: 8px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .header-links.ativo .hamburguer {
+    border-top-color: transparent;
+  }
+  .header-links.ativo .hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .header-links.ativo .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -12px;
+  }
+}

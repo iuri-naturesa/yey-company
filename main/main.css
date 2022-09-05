@@ -1,0 +1,30 @@
+main {
+  padding-top: 10%;
+  padding-bottom: 100vh;
+}
+
+.main h1 {
+  color: var(--cor-b2);
+  font-family: "raleway-eb", sans-serif;
+  font-size: clamp(1rem, 6rem, 6rem);
+  user-select: none;
+  white-space: nowrap;
+  padding-right: 50px;
+}
+.main p {
+  color: var(--cor-b2);
+  font-family: "mont-l", sans-serif;
+  font-size: 1.75rem;
+  padding-top: 30px;
+  max-width: 50ch;
+  user-select: none;
+}
+.main-foot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.seta-baixo {
+  text-align: center;
+  width: 64px;
+}

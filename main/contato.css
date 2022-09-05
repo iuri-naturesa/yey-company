@@ -1,0 +1,41 @@
+.contato {
+  margin-top: 20vh;
+}
+
+.contato h2 {
+  font-family: "raleway-eb";
+  color: var(--cor-b2);
+  font-size: 4rem;
+  padding-top: 40px;
+  user-select: none;
+}
+.contato h2::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: var(--cor-p1);
+  display: block;
+}
+
+.contato-form {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  font-size: 2rem;
+}
+.form div {
+  border: solid 2px var(--cor-p1);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.form label {
+  font-family: "mont-m";
+}
+.form input {
+  font-family: "mont-l";
+  background-color: transparent;
+}
+.form:focus {
+  background: transparent;
+}
