@@ -20,6 +20,7 @@
 .time-conteudo {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .time-fotos {
   position: relative;
@@ -42,4 +43,5 @@
 .time-fotos img {
   border: solid 2px var(--cor-p1);
   padding: 3px;
+  width: 100%;
 }
