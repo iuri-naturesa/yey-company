@@ -44,7 +44,7 @@
   }
   .hamburguer {
     width: 40px;
-    border-top: 3px solid var(--cor-p1);
+    border-top: 3px solid var(--cor-b2);
   }
   .hamburguer::after,
   .hamburguer::before {
@@ -52,7 +52,7 @@
     display: block;
     width: 40px;
     height: 4px;
-    background: var(--cor-p1);
+    background: var(--cor-b2);
     margin-top: 8px;
     transition: 0.3s;
     position: relative;
