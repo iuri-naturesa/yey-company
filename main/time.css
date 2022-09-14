@@ -63,13 +63,6 @@
   }
 }
 @media (max-width: 480px) {
-  .time-conteudo {
-    display: flex;
-    flex: 10 0 auto;
-    width: 900px;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
   .time-fotos h4 {
     font-size: 1.6vh;
     max-width: 9ch;
